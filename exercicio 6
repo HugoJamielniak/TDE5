@@ -1,0 +1,21 @@
+vetor1=[]#armazenar os numeros dos trouxas
+vetor2=[]#par
+vetor3=[]#impar
+
+for i in range(4):
+    numero = int(input(f"Digite o {i+1}º número inteiro: "))
+    vetor1.append(numero)
+
+for numero in vetor1:
+    if numero % 2 == 0:
+        vetor2.append(numero)
+    if numero % 2 != 0:
+        vetor3.append(numero)
+
+soma2 = sum(vetor2)
+
+
+
+print(f'os numeros escolhidos são {vetor1}')
+print(f'os numeros pares são: {vetor2} ,e a soma desses valores são: {soma2}')
+print(f'os numeros impares são: {vetor3}')
