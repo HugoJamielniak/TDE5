@@ -1,0 +1,16 @@
+numeros=[]#armazenar os numeros dos trouxas
+
+
+for i in range(2):
+    numero = int(input(f"Digite o {i+1}º número inteiro: "))
+    numeros.append(numero)
+
+
+soma1 = sum(numeros)
+multiplicação = numeros[0] * numeros[1]
+divisão = numeros[0] / numeros[1]
+
+print(f'os valores são {numeros}')
+print(f'a soma dos valores são {soma1}')
+print(f'a multiplicação dos valores são {multiplicação}')
+print(f'a divisão dos valores são {divisão}')
