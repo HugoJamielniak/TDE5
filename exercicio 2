@@ -1,0 +1,7 @@
+for i in range(1, 101):
+    multiplicando = (i - 1) // 10 + 1
+    multiplicador = (i - 1) % 10 + 1
+    produto = multiplicando * multiplicador
+    print(f"{multiplicando} x {multiplicador} = {produto}")
+    if multiplicador == 10:
+        print()  # linha em branco para separar as tabuadas
