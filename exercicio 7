@@ -1,0 +1,17 @@
+import math
+
+def eh_triangular(x):
+    delta = 1 + 8 * x
+    raiz = math.isqrt(delta)
+
+    if raiz * raiz == delta:
+        n = (-1 + raiz) / 2
+        return n.is_integer()
+    return False
+
+# Teste
+numero = int(input("Digite um número: "))
+if eh_triangular(numero):
+    print(f"{numero} é um número triangular.")
+else:
+    print(f"{numero} não é um número triangular.")
